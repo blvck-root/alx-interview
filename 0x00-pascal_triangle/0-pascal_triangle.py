@@ -14,15 +14,18 @@ def pascal_triangle(n):
   Returns:
       A list of lists representing the Pascal's triangle. If n <= 0, returns an empty list.
   """
-  triangle = []
-  if n <= 0:
-    return triangle
+  try:
+    triangle = []
+    if n <= 0:
+      return triangle
 
-  for i in range(1, n + 1):
-    C = 1  # C(i, j)
-    row = []
-    for j in range(1, i + 1):
-      row.append(C)
-      C = int(C * (i - j) / j)
-    triangle.append(row)
-  return triangle
+    for i in range(1, n + 1):
+      C = 1  # C(i, j)
+      row = []
+      for j in range(1, i + 1):
+        row.append(C)
+        C = int(C * (i - j) / j)
+      triangle.append(row)
+    return triangle
+  except TypeError:
+    print("Input must be an integer")
