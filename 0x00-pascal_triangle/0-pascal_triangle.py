@@ -31,3 +31,4 @@ def pascal_triangle(n):
         return triangle
     except TypeError:
         print("Input must be an integer")
+        return []
