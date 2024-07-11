@@ -14,7 +14,7 @@ of prime factors of n.
 
 
 def minOperations(n):
-    """ 
+    """
     Calculates the minimum number of operations
     to produce n Hs, using Copy All and Paste only
     starting from a single H character.
