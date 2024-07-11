@@ -2,7 +2,7 @@
 """
 Mock Interview Question:
 In a textfile there is a single character H.
-Your text editor can execute only two 
+Your text editor can execute only two
 operations in this file. Copy All and Paste.
 Given a number n, write a method that calculates
 the fewest number of operations needed to result in
@@ -11,6 +11,7 @@ n H characters in the file.
 The number of operations is proportional to the sum
 of prime factors of n.
 """
+
 
 def minOperations(n):
     """ 
