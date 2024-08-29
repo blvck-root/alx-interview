@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Calculate island perimeter."""
-from typing import List
 
 
 def island_perimeter(grid):
